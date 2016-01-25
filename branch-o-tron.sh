@@ -2,17 +2,13 @@
 # Author: Spencer Bywater
 # Date: 25 Jan 2016, Research Day
 # Description: If using a bam_workspace, displays the repositories in your 
-# 			   workspace, which branch they are on, and if the branch has
-# 			   any unstaged changes.
+#              workspace, which branch they are on, and if the branch has
+#              any unstaged changes.
 
-PINK='95'
-BLUE='94'
 LIGHT_BLUE='34'
 GREEN='92'
 YELLOW='93'
-RED='91'
 LIGHT_GRAY='37'
-DEFAULT='0'
 
 LENGTH=80
 
@@ -51,9 +47,16 @@ function dir_blaster {
 	fi;
 }
 
-# Save current directory and switch to root of workspace
+# Save current directory
 pushd . >/dev/null
-BASE_DIR=/Users/$USER/workspaces/bam
+
+# Switch to root of workspace
+if [ $# == 0 ]; then
+	BASE_DIR=/Users/$USER/workspaces/bam
+elif [ $# == 1 ]; then
+	BASE_DIR=$1
+fi
+
 cd $BASE_DIR
 
 # Get details for bam repository
