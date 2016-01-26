@@ -30,3 +30,5 @@ If your workspace is in a different directory, you can also enter `bot path` to 
 ![branch-o-tron results]
 (https://raw.github.com/spencerbywater-wf/branch-o-tron/master/img/1.png)
 
+### Feedback
+If you found this useful, let me know! Suggestions are welcome.
