@@ -25,5 +25,8 @@ With your new alias set up, simply run `bot` in the root of your workspace to se
 
 Green means no unstaged changes, yellow means there are unstaged changes.
 
-If your workspace is in a different directory, you can also enter `bot path` to unleash branch-o-tron on that directory.
+If your workspace is in a different directory, you can also enter `bot path` to unleash branch-o-tron on that directory. Here, `bot` is being called on "1", which is a folder that contains another workspace:
+
+![branch-o-tron results]
+(https://raw.github.com/spencerbywater-wf/branch-o-tron/master/img/1.png)
 
